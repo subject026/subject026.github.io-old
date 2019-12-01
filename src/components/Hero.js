@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import { gsap, TimelineMax, Power3, Power1, Back, CSSPlugin } from "gsap"
 
-gsap.registerPlugin(CSSPlugin)
-
 import LappyIcon from "./LappyIcon"
 import CvIcon from "./CvIcon"
 import GithubIcon from "./GithubIcon"
 import TwitterIcon from "./TwitterIcon"
+
+gsap.registerPlugin(CSSPlugin)
 
 const Hero = styled.section`
   height: 100vh;
@@ -42,6 +42,10 @@ const IconBar = styled.ul`
     width: 35px;
     height: 35px;
     transition: transform 0.1s ease-out;
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 `
 
@@ -50,6 +54,9 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  div {
+    background-image: url("/images/Jt20.gif");
+  }
 `
 
 const TextContainer = styled.div`
@@ -60,6 +67,10 @@ const TextContainer = styled.div`
   align-items: center;
   transform: translateY(100%);
   padding: 30px;
+  img {
+    width: 60px;
+    height: 60px;
+  }
 `
 
 const TitleText = styled.h1`
