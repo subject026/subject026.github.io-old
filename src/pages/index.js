@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const IndexPage = () => {
+export default () => {
   const [state, setState] = useState({ fontIsLoaded: false })
 
   useEffect(() => {
@@ -47,4 +47,3 @@ const IndexPage = () => {
     </>
   )
 }
-export default IndexPage
