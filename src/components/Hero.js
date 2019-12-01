@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react"
 import styled from "styled-components"
 import { gsap, TimelineMax, Power3, Power1, Back, CSSPlugin } from "gsap"
 
-gsap.registerPlugin(CSSPlugin)
-
 import LappyIcon from "./LappyIcon"
 import CvIcon from "./CvIcon"
 import GithubIcon from "./GithubIcon"
 import TwitterIcon from "./TwitterIcon"
+
+gsap.registerPlugin(CSSPlugin)
 
 const Hero = styled.section`
   height: 100vh;
