@@ -14,6 +14,7 @@
     "gatsby-plugin-sharp": "^2.3.4",
     "gatsby-source-filesystem": "^2.1.39",
     "gatsby-transformer-sharp": "^2.3.6",
+    "gh-pages": "^2.1.1",
     "gsap": "^3.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -32,7 +33,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "git subtree push --prefix public/ origin master",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

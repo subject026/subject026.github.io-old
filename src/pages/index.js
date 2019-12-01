@@ -41,7 +41,7 @@ export default () => {
       {fontIsLoaded && (
         <>
           <Hero />
-          <h1>BOOO</h1>
+          {/* <h1>BOOO</h1> */}
         </>
       )}
     </>
