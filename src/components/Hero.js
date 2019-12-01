@@ -46,7 +46,6 @@ const IconBar = styled.ul`
 `
 
 const IconContainer = styled.div`
-  background-color: #f2f2f2;
   opacity: 0;
   display: flex;
   align-items: center;
