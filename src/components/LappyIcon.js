@@ -18,7 +18,7 @@ export default ({ iconRef }) => {
   return (
     <Container ref={iconRef}>
       <Image src={winGif} />
-      <SVG
+      <svg
         width="270"
         height="186"
         fill="none"
@@ -33,9 +33,9 @@ export default ({ iconRef }) => {
           fill="#262626"
         />
         <clipPath id="clipIt">
-          <path d="M30 19h210v126H30z" />
+          <path d="M29 18h212v128H29z" />
         </clipPath>
-      </SVG>
+      </svg>
     </Container>
   )
 }
