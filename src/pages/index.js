@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 
 import Hero from "../components/Hero"
 import SEO from "../components/seo"
@@ -18,6 +18,15 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+const theme = {
+  layout: {
+    padding: {
+      small: "15px",
+      large: "30px",
+    },
+  },
+}
+
 export default () => {
   const [state, setState] = useState({ fontIsLoaded: false })
 
@@ -35,7 +44,7 @@ export default () => {
 
   const { fontIsLoaded } = state
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle fontIsLoaded={fontIsLoaded} />
       <SEO title="Home" />
       {fontIsLoaded && (
@@ -44,6 +53,6 @@ export default () => {
           {/* <h1>BOOO</h1> */}
         </>
       )}
-    </>
+    </ThemeProvider>
   )
 }
