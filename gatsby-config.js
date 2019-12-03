@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`poppins\:700,400`],
+        fonts: [`poppins\:900,800,700,400`],
         display: "swap",
       },
     },

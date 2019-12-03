@@ -59,8 +59,9 @@ const LappyContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 0;
+  padding: 0;
   opacity: 0;
+  height: 145px;
   @media (min-width: 500px) {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -101,7 +102,7 @@ const TextContainerBottom = styled.div`
 const TitleText = styled.h1`
   color: #ddd;
   margin: 0;
-  padding: 15px;
+  padding: 30px 15px;
   font-size: 35px;
   @media (min-width: 500px) {
     font-size: 50px;
@@ -125,6 +126,14 @@ const SubtitleText = styled.p`
   @media (min-width: 500px) {
     padding: 15px ${({ theme }) => theme.layout.padding.large};
   }
+`
+
+const ProjectsTitle = styled.h2`
+  margin: 30px 0 0 0;
+  padding: ${({ theme }) => theme.layout.padding.small};
+  font-size: 28px;
+  font-weight: 800;
+  color: #bbb;
 `
 
 export default () => {
@@ -190,6 +199,19 @@ export default () => {
           </SubtitleText>
         </TextContainerBottom>
       </Hero>
+      <ProjectsTitle>
+        <span>/</span>
+        <span>/</span>
+        <span> </span>
+        <span>p</span>
+        <span>r</span>
+        <span>o</span>
+        <span>j</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+        <span>s</span>
+      </ProjectsTitle>
     </>
   )
 }

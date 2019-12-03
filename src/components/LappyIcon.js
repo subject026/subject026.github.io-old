@@ -5,7 +5,7 @@ import winGif from "../images/winGif.gif"
 
 const Container = styled.div`
   position: relative;
-  transform: scale(0.7) translateX(50px);
+  transform: scale(0.4) translateX(50px);
   opacity: 0;
   @media (min-width: 500px) {
     opacity: 1;
