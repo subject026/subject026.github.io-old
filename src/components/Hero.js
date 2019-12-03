@@ -88,12 +88,13 @@ const TextContainerBottom = styled.div`
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: #202020;
-  transform: translateX(100vw);
+  transform: translateX(-100vw);
   @media (min-width: 500px) {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    transform: translateX(100vw);
   }
 `
 

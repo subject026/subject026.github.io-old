@@ -5,9 +5,13 @@ import winGif from "../images/winGif.gif"
 
 const Container = styled.div`
   position: relative;
-  transform: scale(0.7);
+  transform: scale(0.7) translateX(50px);
+  opacity: 0;
+  @media (min-width: 500px) {
+    opacity: 1;
+  }
   @media (min-width: 795px) {
-    transform: scale(1);
+    transform: scale(1) translateX(0);
   }
   svg {
     width: 270px;

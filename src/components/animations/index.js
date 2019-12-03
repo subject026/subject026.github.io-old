@@ -9,7 +9,6 @@ gsap.registerPlugin(CSSPlugin)
 export const animateIn = refs => {
   const master = new TimelineMax()
   const {
-    // heroRef,
     lappyContainerRef,
     textContainerTopRef,
     textContainerBottomRef,
@@ -21,18 +20,6 @@ export const animateIn = refs => {
     twitterIconRef,
   } = refs
 
-  // title text
-
-  // const squashHero = () => {
-  //   const tl = new TimelineMax()
-  //   tl.to(heroRef.current, 0.3, {
-  //     height: "80vh",
-  //   })
-  //   return tl
-  // }
-
-  // // icons
-  // animateIconBar(tl)
   master.add(
     animateBackground({
       textContainerTopRef,
@@ -52,8 +39,7 @@ export const animateIn = refs => {
       githubIconRef,
       cvIconRef,
       twitterIconRef,
-    })
+    }),
+    "-=0.3"
   )
-  // master.add(squashHero())
-  // master.play()
 }
